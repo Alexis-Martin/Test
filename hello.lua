@@ -2,7 +2,6 @@ function printTable(ma_table)
 	for k,v in ipairs(ma_table) do
 		print(k, v)
 	end
-	print("end function")
 end	
 
 function searchValue(ma_table, value)
