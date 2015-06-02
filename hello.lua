@@ -6,5 +6,6 @@ function printTable(ma_table)
 end	
 
 do
-printTable({4, "bla", "Hello World", true, 2.3})
+local ma_table = {4, "bla", "Hello World", true, 2.3}
+printTable(ma_table)
 end
