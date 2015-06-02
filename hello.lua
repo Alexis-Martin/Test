@@ -6,6 +6,17 @@ function printTable(ma_table)
 	print("end function")
 end	
 
+function searchValue(ma_table, value)
+	for k,v in pairs(ma_table) do
+		if(v == value) then
+			return true
+		end
+	end
+	return false
+end
+
 do
-printTable({1, "bla", "Hello World", true, 2.3})
+local ma_table = {1, "bla", "Hello World", true, 2.3}
+printTable(ma_table)
+print(searchValue(ma_table, "bla"))
 end
