@@ -19,7 +19,7 @@ ma_table = {}
 
 k = "x"
 
-ma_table[k] = 10 
+ma_table[k] = 10
 
 ma_table[20] = "grand" 
 
@@ -33,6 +33,7 @@ print(ma_table["grand"])
 end
 
 do
+
 co = coroutine.create(function(a, b, c)
   print(a,b)
   coroutine.yield(a + b, a - b)                
@@ -48,4 +49,15 @@ do
 local ma_table = {4, "bla", "Hello World", true, 2.3}
 --print(searchValue(ma_table, "bla"))
 end
+
+do
+	local ma_table = 1
+	function function_test()
+		for i = 1, 10 do
+			print(i)
+		end
+		
+	end
+end
+
 
