@@ -34,6 +34,18 @@ print(ma_table["grand"])
 end
 
 do
+co = coroutine.create(function(a, b, c)
+  print(a,b)
+  coroutine.yield(a + b, a - b)                
+end)
+        
+print(coroutine.resume(co, 21, 10))
+print(coroutine.status(co))
+print(coroutine.resume(co, 21, 10))
+print(coroutine.status(co))
+end
+
+do
 local ma_table = {4, "bla", "Hello World", true, 2.3}
 --print(searchValue(ma_table, "bla"))
 end
