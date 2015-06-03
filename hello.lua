@@ -14,7 +14,27 @@ function searchValue(ma_table, value)
 	return false
 end
 
+
+do
+ma_table = {} 
+
+k = "x"
+
+ma_table[k] = 10 
+
+ma_table[20] = "grand" 
+
+print(ma_table["x"]) 
+
+print(ma_table[k])  
+
+print(ma_table[20])
+
+print(ma_table["grand"]) 
+end
+
 do
 local ma_table = {4, "bla", "Hello World", true, 2.3}
-print(searchValue(ma_table, "bla"))
+--print(searchValue(ma_table, "bla"))
 end
+
